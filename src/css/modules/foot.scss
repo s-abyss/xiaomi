@@ -1,0 +1,23 @@
+#foot{
+    background: #f9f9f9;
+    .foot-menu{
+        ul{
+            $menuSize : 24px;
+            @include flexCenter;
+            height : 100px;
+            font-size : $menuSize;
+            i{
+                font-size : $menuSize;
+            }
+            li{
+                width:25%;
+            }
+        }
+    }
+    .foot-logo{
+        img{
+            width:200px;
+            margin:10px;
+        }
+    }
+}

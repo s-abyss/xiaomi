@@ -1,0 +1,50 @@
+
+
+// 定义一些全局变量
+$defaultColor : #999;
+$defaultfontSize : 14px;
+$defaultContainer : 1200px;
+
+// css reset 
+*{ margin:0; padding:0;}
+html{ overflow-x: hidden;}
+ul,ol{ list-style: none;}
+img{ display: block;}
+body,h1,h2,h3{ font-size: $defaultfontSize; color:$defaultColor;}
+a{ color:$defaultColor; text-decoration: none;}
+
+// css common 
+body{ display: flex; flex-direction: column; min-height: 100vh;}
+.container{ width: $defaultContainer; margin:0 auto; position: relative;}
+.container-fluid{ position: relative;}
+.wrapper{ flex-grow: 1;}  /* 填充满弹性盒子的剩余空间 */
+.l{ float:left;}
+.r{ float:right;}
+.clearfix:after{ content:""; display: block; clear:both;}
+
+// 混入
+@mixin posLT {
+    position: absolute;
+    left:0;
+    top:0;
+}
+
+@mixin wh100{
+    width : 100%;
+    height : 100%;
+    display : block;
+}
+
+@mixin textCenter($h){
+    height : $h;
+    line-height: $h;
+    text-align: center;
+}
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+

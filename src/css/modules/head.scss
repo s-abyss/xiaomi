@@ -1,0 +1,21 @@
+#head{
+    overflow: hidden;
+    .head-menu{
+        $menuLine : 30px;
+        background : #2e2828;
+        height: $menuLine;
+        ul{
+            line-height: $menuLine;
+            li{
+                float: left;
+                margin-left:10px;
+            }
+        }
+    }
+    .head-logo{
+        img{
+            width: 150px;
+            margin:10px;
+        }
+    }
+}
