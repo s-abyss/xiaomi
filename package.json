@@ -4,7 +4,8 @@
   "description": "开始小米商城项目",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"gulp dev"
   },
   "repository": {
     "type": "git",
