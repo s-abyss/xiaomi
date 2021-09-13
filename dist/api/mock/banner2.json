@@ -1,0 +1,14 @@
+{
+    "type" : "banner",
+    "code" : 0,
+    "banner_list" : [
+        {
+            "imgUrl" : "https://res.vmallres.com/pimages//pages/picImages/82532082352618023528.jpg",
+            "imgLink" : "https://www.vmall.com/product/10086644773643.html"
+        },
+        {
+            "imgUrl" : "https://res.vmallres.com/pimages//pages/picImages/14093496270619439041.jpg",
+            "imgLink" : "https://www.vmall.com/huawei"
+        }
+    ]
+}
