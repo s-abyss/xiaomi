@@ -5,7 +5,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev":"gulp dev"
+    "dev": "gulp dev"
   },
   "repository": {
     "type": "git",
@@ -37,5 +37,8 @@
   },
   "browserslist": [
     "> 0%"
-  ]
+  ],
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.10"
+  }
 }
