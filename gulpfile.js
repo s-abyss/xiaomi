@@ -24,12 +24,6 @@ function sassTask(){
             .pipe(sass())
             .pipe(dest('./dist/css'))
 }
-//
-function sassTask1(){
-    return src('./src/css/modules/*.scss')
-            .pipe(sass())
-            .pipe(dest('./dist/css/modules'))
-}
 //html片段任务
 function htmlTask(){
     return src('./src/views/*.html')
@@ -38,14 +32,6 @@ function htmlTask(){
                 basepath:'./src/views/templates'
             }))
             .pipe(dest('./dist/views'))
-}
-function htmlTask1(){
-    return src('./src/views/templates/*.html')
-            .pipe(fileInclude({
-                prefix:'@',
-                basepath:'./src/views/templates'
-            }))
-            .pipe(dest('./dist/views/templates'))
 }
 //同步js代码
 function jsTask(){
@@ -77,7 +63,7 @@ function webTask(){
             .pipe(webserver({
                 host : 'localhost',
                 port : 4000,
-                open : './views/detail.html',
+                open : './views/index.html',
                 livereload : true 
             })) 
 }
@@ -95,5 +81,5 @@ function watchTask(){
 
 module.exports = {
     //开发任务
-    dev: series(cleanTask, parallel(sassTask,sassTask1, htmlTask, htmlTask1, jsTask, libTask, staticTask, apiTask), parallel(webTask, watchTask) )
+    dev: series(cleanTask, parallel(sassTask, htmlTask, jsTask, libTask, staticTask, apiTask), parallel(webTask, watchTask) )
 };
